@@ -1,0 +1,155 @@
+html,
+body {
+  margin: 0;
+}
+
+html {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  background-color: var(--pale-blue);
+  color: #fff;
+  background-image: url("images/pattern-background-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a {
+  color: var(--bright-blue);
+}
+
+a:hover {
+  color: slateblue;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  border-radius: 1rem;
+  max-width: 90vw;
+  overflow: hidden;
+  background-color: white;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 1.1rem;
+  text-align: center;
+}
+
+.card-body > h1 {
+  color: var(--dark-blue);
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.card-body > p {
+  color: var(--desaturated-blue);
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.card-payment {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: var(--very-pale-blue);
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.card-payment img {
+  margin-right: 1rem;
+}
+
+.card-payment div {
+  flex: 1;
+  text-align: left;
+}
+
+.card-payment strong {
+  color: var(--dark-blue);
+}
+
+.card-payment p {
+  margin: 0;
+  color: var(--desaturated-blue);
+}
+
+.btn {
+  font-weight: 900;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  color: var(--very-pale-blue);
+  background-color: var(--bright-blue);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 10px var(--pale-blue);
+  margin-bottom: 1rem;
+}
+
+.btn.primary:hover {
+  background-color: slateblue;
+}
+
+.btn.secondary {
+  color: var(--desaturated-blue);
+  background-color: transparent;
+}
+
+.btn.secondary:hover {
+  color: black;
+}
+
+@media (min-width: 40rem) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+
+  .card {
+    max-width: 400px;
+  }
+
+  .card-body {
+    padding: 2.5rem;
+  }
+
+  .card-body h1 {
+    font-size: 1.6rem;
+  }
+
+  .card-body > p {
+    padding: 0 0.5rem;
+  }
+
+  .card-payment {
+    padding: 1rem;
+  }
+}

@@ -4,7 +4,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [https://nasuke0302.github.io/stats-preview-card-component/](https://nasuke0302.github.io/stats-preview-card-component/)
+- Live Site URL: [https://nasuke0302.github.io/order-summary-component/](https://nasuke0302.github.io/order-summary-component/)
 
 ### Built with
 
